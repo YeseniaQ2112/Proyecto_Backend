@@ -7,11 +7,11 @@ import { Taller } from './taller/taller.entity';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-  type: 'sqlite',
-  database: 'database.sqlite',
-  entities: [Taller],
-  synchronize: true,
-})
+      type: 'sqlite',
+      database: 'database.sqlite',
+      entities: [Taller],
+      synchronize: true,
+    }),
     TallerModule,
     AgenteModule,
   ],
