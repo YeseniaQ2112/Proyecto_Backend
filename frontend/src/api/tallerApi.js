@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = '/api/taller'
+const API = `${import.meta.env.VITE_API_URL}/api/taller`
 
 export const getTalleres = async () => {
   const { data } = await axios.get(API)
